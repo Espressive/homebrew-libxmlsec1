@@ -14,7 +14,6 @@ class Libxmlsec1 < Formula
     root_url "https://github.com/Espressive/homebrew-libxmlsec1/releases/download/libxmlsec1-1.2.37"
 sha256 cellar: :any, ventura: "f4a666f94bc02fb7d47219418e91ee60903a4e0b0d4cf0817ba024e90d228a82"
     sha256 cellar: :any, monterey: "529ec4cc50cbc20b280ef049964916da82c22e974713fa3ef958190121984d3b"
-    rebuild 1
     sha256 cellar: :any, arm64_ventura: "0c9824df95d548e0a4b7a4421b682763625ded41b1b750cea965859982fdde37"
   end
 
