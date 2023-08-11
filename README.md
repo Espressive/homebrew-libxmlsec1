@@ -10,7 +10,7 @@ Binary available for platforms:
 
 If no binary is available for your platform, this formula will try to compile it for souce.
 
-You need to have a full Xcode install do compile from source.
+You need to have a full Xcode install to compile from source.
 
 
 # Install
@@ -45,7 +45,7 @@ mkdir ~/bottlelib
 cd ~/bottlelib
 ```
 
-Run this command to create the bottle and keep the needed artifacts:
+Run this command to create the bottle and keep the necesary artifacts:
 
 ```bash
 HOMEBREW_NO_INSTALL_CLEANUP=1 brew install --build-bottle espressive/libxmlsec1/libxmlsec1
@@ -68,11 +68,10 @@ This will output something like:
 
 ```
 
-You need to remove one of the dashes in the package name ```libxmlsec1-1.2.37.monterey.bottle.tar.gz```
+You need to remove one of the extra dashes in the package name ```libxmlsec1-1.2.37.monterey.bottle.tar.gz```
 
 
-
-Edit ```Formula/libxmlsec1.rb``` and add your new bottle DSL to the bottle do block.
+Then, edit ```Formula/libxmlsec1.rb``` and add your new bottle DSL to the bottle do block.
 
 BEFORE:
 
@@ -107,4 +106,4 @@ You can now delete the ```~/bottlelib``` directory.
 
 # Build with workflows.
 
-Do not try to use the ```brew pr-pull```/```brew test-bot``` workflows to automate this, MacOS workflows are 10x more expensive and don't compile arm/universal binaries.
+Do not try to use the ```brew pr-pull```/```brew test-bot``` workflows to automate this, MacOS workflows are billed at 10x time, take forever and don't compile arm/universal binaries.
